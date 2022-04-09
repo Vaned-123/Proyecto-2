@@ -1,0 +1,52 @@
+#menu-bar{
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    height: 100vh;
+    background: rgba(219, 238, 253, 0.9);
+    display: grid;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    height: 50px;
+    padding: 15px;
+    border: 1px solid whitesmoke;
+    text-align: center;
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+@media (min-width:1000px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+    .menu a {
+        border: none;
+    }
+
+    header label {
+        display: none;
+    }
+}
