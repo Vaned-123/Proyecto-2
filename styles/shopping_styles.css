@@ -6,15 +6,17 @@
     height: 400px;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-/* .title-text{
-    float: right;
-    font-size: 70px;
+.title-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Inconsolata', monospace;
     margin-top: 5px;
     margin-bottom: 0%;
-} */
+} 
 
 /* .title-img{
     background-image: url(../assets/logo.png);
